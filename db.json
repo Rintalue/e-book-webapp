@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signUpUsers": [
+    {
+      "fullname": "Rinta Luther",
+      "username": "lue",
+      "email": "lutherrinta@gmail.com",
+      "phoneno": "0705357840",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "email": "",
+      "password": "1235",
+      "id": 2
+    },
+    {
+      "email": "",
+      "password": "1235",
+      "id": 3
+    },
+    {
+      "fullname": "Haron Kirui",
+      "username": "onizuka",
+      "email": "onizuka@gmail.com",
+      "phoneno": "0705357555",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "email": "",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "email": "",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "fullname": "Prince Luther",
+      "username": "prince",
+      "email": "rinta@gmail.com",
+      "phoneno": "0705888840",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "fullname": "Rinta Luther",
+      "username": "eva",
+      "email": "lutherrinta@gmail.com",
+      "phoneno": "0705357840",
+      "password": "12",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

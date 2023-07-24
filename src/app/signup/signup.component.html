@@ -1,0 +1,121 @@
+<div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+  <div class="card card0 border-0">
+    <div class="row d-flex">
+      <div class="col-lg-5">
+        <div class="card1 pb-5">
+          <div class="row px-3">
+            <h5 class="logo"><u>LUTHERA</u></h5>
+          </div>
+          <div class="row px-3 justify-content-center mt-4 mb-5">
+            <div>
+                <div class="carousel-item active card border-0 card-0">
+                  <div class="text-center"></div>
+                  <h6 class="font-weight-bold mt-5">Luthera e-book store</h6>
+                  <small class="mb-2">Who are we?</small>
+                  <hr width="50%" />
+                  <p class="content mt-2 mb-0">
+                    We are your go-to online bookstore that is dedicated to providing
+                   you with the best possible reading
+                    and seamless online book shopping experience. As an avid reader
+                    you'll have access to  broad range of books at competitive prices,
+                     so you can stock up your library at an affordable price<br />You can browse
+                    our vast collection of books from the comfort of your own home,
+                    making it easy to find the perfect read for your interests.
+                    We  take pride in offering a unique feature where you can share books with your
+                    friends hence promoting social reading. Plus, our website uses an e-wallet system that makes it easier to pay.
+                    <br />We look forward to being your source for great books for years to come.
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="card2 card border-0 px-4 px-sm-5 py-5">
+          <small class="text-right mb-3"
+            ><a href="/login"><u>I already have an account</u></a></small
+          >
+          <h3 class="mb-1">Sign up to luthera</h3>
+          <p class="mb-4 text-sm">
+            Create an account and enjoy the best possible reading experience.
+          </p>
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label class="mb-0">
+                <h6 class="mb-0 text-sm">Full Name</h6>
+              </label>
+              <input type="text" name="fname" placeholder="John Doe" formControlName="fullname"/>
+            </div>
+            <div class="col-md-6">
+              <label class="mb-0">
+                <h6 class="mb-0 text-sm">Username</h6>
+              </label>
+              <input type="text" name="uname" placeholder="johndoe123" formControlName="username"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="mb-0">
+              <h6 class="mb-0 text-sm">Email Address</h6>
+            </label>
+            <input type="text" name="email" placeholder="john.doe@email.com" formControlName="email" />
+          </div>
+          <div class="col-md-6">
+            <label class="mb-0">
+              <h6 class="mb-0 text-sm">Phone Number</h6>
+            </label>
+            <input type="tel" name="phoneno" placeholder="0712345678" formControlName="phoneno"/>
+          </div>
+          <div class="col-md-6">
+            <label class="mb-0">
+              <h6 class="mb-0 text-sm">Password</h6>
+            </label>
+            <input
+              type="password"
+              name="password"
+              placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+              formControlName="password"
+              />
+          </div>
+        </form>
+          <div class="row px-3 mb-3">
+            <small class="text-muted"
+              >By signing up, you agree our
+              <a href="" class="text-primary">Terms of services</a> and
+              <a href="" class="text-primary">Privacy Policy</a></small
+            >
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <button class="btn btn-blue text-center mb-1 py-2">
+                Create Account
+              </button>
+            </div>
+          </div>
+
+          <div class="row px-3 mb-4">
+            <div class="line"></div>
+            <small class="text-muted or text-center">OR</small>
+            <div class="line"></div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-sm-6">
+              <p class="social-connect">
+                <span class="fa fa-facebook-square"></span
+                ><small class="pl-3 pr-1">Sign up with facebook</small>
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="social-connect">
+                <span class="fa fa-google-plus"></span
+                ><small class="pl-3 pr-1">Sign up with google+</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

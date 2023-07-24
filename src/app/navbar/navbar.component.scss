@@ -1,0 +1,147 @@
+
+.header .container-fluid{
+  background: #fff;
+  padding: 1.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container-fluid .navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #000;
+}
+.header .container-fluid .search-form{
+  width: 50rem;
+  height: 4rem;
+  border:.1rem solid #000;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+}
+.header .container-fluid .search-form input{
+font-size: 1.6rem;
+padding:0 1.2rem;
+height: 100%;
+width: 100%;
+text-transform: none;
+color: #000;
+}
+.header .container-fluid .search-form label{
+  font-size: 1.5rem;
+  padding-right: 1.3rem;
+  color: #000;
+  cursor: pointer;
+}
+.header .container-fluid .search-form label:hover{
+  color: #61CE70;
+}
+.header .container-fluid .icons div,
+.header .container-fluid .icons a{
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  text-decoration: blink;
+}
+.header .container-fluid .icons div:hover,
+.header .container-fluid .icons a:hover{
+  color: #61CE70;
+}
+
+.header .header-1{
+  background: #61CE70;
+}
+.header .header-1 .navbar {
+text-align: center;
+justify-content: center;
+
+}
+.header .header-1 .navbar a{
+color: #fff;
+display: inline-block;
+padding: 1.2rem;
+font-size: 1.7rem;
+text-decoration: blink;
+}
+
+.header .header-1 .navbar a:hover{
+  background: #006400;
+}
+.header .header-1.active{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+}
+#search-btn{
+  display: none;
+}
+.bottom-navbar{
+  text-align: center;
+  background:#61CE70;
+  position: fixed;
+  bottom: 0;left: 0;right: 0;
+  z-index: 1000;
+ display: none;
+}
+.bottom-navbar a{
+font-size: 2.5rem;
+padding: 2rem;
+color: #fff;
+text-decoration: blink;
+}
+.bottom-navbar a:hover{
+  background: #006400;
+}
+
+
+@media(max-width:991px){
+  html{font-size: 55%;
+}
+.header .container-fluid{
+  padding: 2rem;
+}
+}
+@media(max-width:768px){
+html{
+  scroll-padding-top: 0;
+}
+body{
+  padding-bottom: 6rem;
+}
+.header .header-1{
+display: none;
+}
+.bottom-navbar{
+  display: block;
+}
+#search-btn{
+  display: inline-block;
+}
+.header .container-fluid{
+  box-shadow: 0.5rem 1rem rgba(0,0,0.1);
+  position: relative;
+}
+.header .container-fluid .search-form{
+position: absolute;
+top: -115%;right:2rem;
+width: 90%;
+box-shadow: 0.5rem 1rem rgba(0,0,0.1);
+}
+.header .container-fluid .search-form.active{
+  top: 115%;
+}
+}
+@media(max-width:450px){
+  html{font-size: 50%;
+}
+}
+
+
+
+
+

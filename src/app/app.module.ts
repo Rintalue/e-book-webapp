@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
+import { LoginFormContainerDirective } from './login-form-container.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SignupComponent } from './signup/signup.component';
     LoginComponent,
     SignupComponent,
     DashboardComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    LoginFormContainerDirective
   ],
   imports: [
     BrowserModule,

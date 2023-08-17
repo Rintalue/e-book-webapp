@@ -34,6 +34,15 @@ export class DashboardComponent implements OnInit {
         },
       });
     }
+
+  if (this.booksSlider) {
+    console.log('this.booksSlider.nativeElement:', this.booksSlider.nativeElement);
+
+    this.swiper = new Swiper(this.booksSlider.nativeElement, {
+      // Swiper configuration...
+    });
+  }
+
   }
 
   ngOnDestroy(): void {
@@ -41,4 +50,7 @@ export class DashboardComponent implements OnInit {
       this.swiper.destroy();
     }
   }
+
+
 }
+

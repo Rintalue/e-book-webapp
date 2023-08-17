@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { SharedService } from '../shared.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -10,10 +12,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+loginFormActive: boolean = false;
+loginFormActiveSubscription: Subscription;
 public loginForm!: FormGroup
 
-  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router) { }
+  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router, private sharedService: SharedService) {
+    this.loginFormActiveSubscription = this.sharedService
+      .getLoginFormActive()
+      .subscribe((isActive) => {
+        this.loginFormActive = isActive;
+      });
+  }
 
   ngOnInit(): void {
     this.loginForm= this.formbuilder.group({
@@ -39,8 +48,10 @@ login(){
     alert("Not Successful")
   })
   }
-
-
-
-
+  toggleLoginForm() {
+    this.sharedService.toggleLoginForm();
+  }
+  ngOnDestroy() {
+    this.loginFormActiveSubscription.unsubscribe();
+  }
 }

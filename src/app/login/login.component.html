@@ -1,7 +1,7 @@
 <div class="login-form-container">
  <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
   <img id="logo" src="../../../assets/bookicon.png">
-  <div id="close-login-btn" class="fa fa-times"></div>
+  <div id="close-login-btn" class="fa fa-times"(click)="toggleLoginForm()"></div>
   <h3>We are Luthera</h3>
  <h3>Please login to your account</h3>
     <div class="form-group">

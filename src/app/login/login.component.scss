@@ -1,8 +1,8 @@
 body {
   color: #000;
   overflow-x: hidden;
-  background-image: linear-gradient(to right, #D500F9, #FFD54F);
-  background-repeat: no-repeat;
+ // background-image: linear-gradient(to right, #D500F9, #FFD54F);
+  //background-repeat: no-repeat;
 
 }
 .login-form-container{
@@ -10,13 +10,22 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(255,255,255,0);
-  position:inherit;
-  top: 0;
-  right: -105%;
+  position:absolute;
+  top: 0 !important;
+  right: -105% !important;
   z-index: 10000;
   height: 100%;
   width: 100%;
+  transition: transform 0.3s;
+  transform: translateX(0%);
+}
 
+.login-form-container.active{
+  right: 0 !important;
+}
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
 }
 .login-form-container form{
   background: #fff;
@@ -49,10 +58,10 @@ body {
   cursor: pointer;
 }
 .login-form-container #close-login-btn{
-  font-size: 2.5rem;
-  bottom: 6.5rem;
-  left: 33rem;
-  position: relative;
+  font-size: 5rem;
+  top: 1.5rem;
+  right: 1rem;
+  position: absolute;
   color: #000;
   cursor: pointer;
 }

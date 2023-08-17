@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
+import { SharedService } from '../shared.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,8 +8,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sharedService: SharedService) {}
 
+  toggleLoginForm() {
+    this.sharedService.toggleLoginForm();
+  }
   ngOnInit(): void {
     // This code will be executed when the component is initialized
     this.handleHeaderScroll(); // Call the function to handle the header scroll immediately

@@ -24,7 +24,7 @@ export class LoginFormContainerDirective {
 
     this.sharedService.getLoginFormActive().subscribe((isActive) => {
       const loginFormContainer = this.elementRef.nativeElement;
-      const dashboardBackground = document.querySelector('.home');
+      const dashboardBackground = document.querySelector('.main');
       if (isActive) {
         this.renderer.addClass(loginFormContainer, 'active');
         this.renderer.addClass(dashboardBackground, 'blur-background');

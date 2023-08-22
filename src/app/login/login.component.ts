@@ -39,10 +39,11 @@ login(){
     });
     if (user){
     alert("Login Successful");
-    this.loginForm.reset();
-    this.router.navigate(['dashboard'])
+
+    this.router.navigate(['landingpage'])
+    this.sharedService.toggleLoginForm();
     }else{
-      alert("User not Found");
+      alert("User not Found, Wrong username or password");
     }
   },err=>{
     alert("Not Successful")

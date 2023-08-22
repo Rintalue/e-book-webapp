@@ -10,6 +10,7 @@ import Swiper from 'swiper';
 export class DashboardComponent implements  AfterViewInit{
   @ViewChild('booksSlider') booksSlider: ElementRef | undefined;
   @ViewChild('featuredSlider') featuredSlider: ElementRef | undefined;
+  @ViewChild('arrivalsSlider') arrivalsSlider: ElementRef | undefined;
   private swiper: Swiper | null = null;
 
   ngAfterViewInit(): void {
@@ -58,6 +59,30 @@ export class DashboardComponent implements  AfterViewInit{
           },
           1024: {
             slidesPerView: 4,
+          },
+        },
+      });
+      console.log('Swiper instance created: ', this.swiper);
+    }
+    if (this.arrivalsSlider) {
+      this.swiper = new Swiper(this.arrivalsSlider.nativeElement, {
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+          delay: 9500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
           },
         },
       });

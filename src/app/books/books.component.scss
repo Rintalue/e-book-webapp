@@ -1,0 +1,87 @@
+section{
+  padding: 2rem 9%;
+}
+.heading{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: #000;
+
+}
+.heading span{
+  background: green;
+  color: #fff;
+  display: inline-block;
+  padding: 0 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%,0% 0%);
+}
+.books .books-slider{
+  padding: 1rem;
+}
+.books .books-slider:first-child{
+  margin-bottom: 2rem;
+}
+.books .books-slider .box{
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: 1rem solid rgba(0,0,0,.1);
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.1) ;
+}
+.books .books-slider .box:hover{
+  outline-offset: 0;
+  outline: .2rem solid rgba(0,0,0,.1) ;
+}
+.books .books-slider .box img{
+  height: 20rem;
+}
+.books .books-slider .box h3{
+  font-size: 2.5rem;
+  color: #000;
+}
+.books .books-slider .box .price{
+  font-size: 2rem;
+  color: #666;
+  padding: 5rem 0;
+}
+.button{
+  background: #eee;
+  border-radius: 50%;
+  color: green;
+  margin: 0 8px;
+  margin-top: -3rem;
+  display: inline-block;
+  padding: 1.9rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button:hover{
+  background: lightgreen;
+}
+.amount{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+@media(max-width:991px){
+  html{
+    font-size: 55%;
+  }
+  section{
+    padding: 2rem;
+  }
+}
+  @media(max-width:768px){
+  }
+  @media(max-width:450px){
+    html{
+      font-size: 50%;
+    }
+    .heading{
+      font-size: 2.5rem;
+    }
+  }

@@ -1,8 +1,9 @@
+
 body {
   color: #000;
-  overflow-x: hidden;
- // background-image: linear-gradient(to right, #D500F9, #FFD54F);
-  //background-repeat: no-repeat;
+overflow-x: hidden;
+ background-image: linear-gradient(to right, #D500F9, #FFD54F);
+ background-repeat: no-repeat;
 
 }
 .login-form-container{
@@ -15,6 +16,7 @@ body {
   transition: transform 0.3s;
   transform: translateX(0%);
 }
+
 
 
 .login-form-container form{

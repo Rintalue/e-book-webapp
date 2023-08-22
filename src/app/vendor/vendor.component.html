@@ -1,0 +1,26 @@
+<div class="login-form-container">
+  <form [formGroup]="vendorSignUpForm" (ngSubmit)="vendorSignup()">
+   <img id="logo" src="../../../assets/bookicon.png">
+   <div id="close-login-btn" class="fa fa-times" [routerLink]="['/dashboard']" routerLinkActive="router-link-active" ></div>
+   <h3>We are Luthera</h3>
+  <h3>Please Sign Up to be a Vendor</h3>
+     <div class="form-group">
+   <span  class="text-muted">Username</span>
+
+    <input type="text" id="username" name="username" formControlName="username" placeholder="username" class="form-control" required>
+   </div>
+  <div class="form-group">
+  <span class="text-muted">Password</span>
+   <input type="password" id="psw" name="psw" formControlName="password" placeholder="Password" class="form-control"  required>
+   </div> <br>
+ <div class="row justify-content-center my-3 px-3">
+   <button class="btn-block btn-color"  (click)="vendorSignup()">Sign Up to Luthera</button>
+  </div>
+ <div class="bottom text-center mb-5">
+    <p> <a href="#" class="sm-text mx-auto mb-3">Already a Vendor?</a>
+ <br/>
+  <button [routerLink]="['/seller-login']" routerLinkActive="router-link-active"  class="btn btn-white ml-2">Login to Your Account</button></p>
+ </div>
+ </form>
+    </div>
+

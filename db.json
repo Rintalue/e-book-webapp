@@ -6,6 +6,28 @@
       "author": "typicode"
     }
   ],
+  "vendorSignup": [
+    {
+      "username": "prince",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "prince",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "rluther",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "username": "rluther",
+      "password": "123456",
+      "id": 4
+    }
+  ],
   "signUpUsers": [
     {
       "fullname": "Rinta Luther",
@@ -66,6 +88,14 @@
       "phoneno": "0705357840",
       "password": "1234",
       "id": 9
+    },
+    {
+      "fullname": "Rinta Luther",
+      "username": "Luer",
+      "email": "lutherrinta@gmail.com",
+      "phoneno": "0705357840",
+      "password": "12345",
+      "id": 10
     }
   ],
   "comments": [

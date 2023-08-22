@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { LoginFormContainerDirective } from './login-form-container.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { LoginFormContainerDirective } from './login-form-container.directive';
     SignupComponent,
     DashboardComponent,
     LandingpageComponent,
-    LoginFormContainerDirective
+    LoginFormContainerDirective,
+
   ],
   imports: [
     BrowserModule,

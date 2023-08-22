@@ -58,6 +58,14 @@
       "phoneno": "0705357840",
       "password": "12",
       "id": 8
+    },
+    {
+      "fullname": "Jane Luther",
+      "username": "jane",
+      "email": "lutherrinta@gmail.com",
+      "phoneno": "0705357840",
+      "password": "1234",
+      "id": 9
     }
   ],
   "comments": [

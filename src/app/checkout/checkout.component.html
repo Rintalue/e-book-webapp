@@ -1,0 +1,204 @@
+
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 mb-4">
+
+
+        <!-- Checkout -->
+        <div class="card shadow-0 border">
+          <div class="p-4">
+            <h5 class="card-title mb-3">Checkout</h5>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <p class="mb-0">First name</p>
+                <div class="form-outline">
+                  <input type="text" id="typeText" placeholder="Type here" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-6">
+                <p class="mb-0">Last name</p>
+                <div class="form-outline">
+                  <input type="text" id="typeText" placeholder="Type here" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-6 mb-3">
+                <p class="mb-0">Phone</p>
+                <div class="form-outline">
+                  <input type="tel" id="typePhone" value="+254 " class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-6 mb-3">
+                <p class="mb-0">Email</p>
+                <div class="form-outline">
+                  <input type="email" id="typeEmail" placeholder="example@gmail.com" class="form-control" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Keep me up to date on news</label>
+            </div>
+
+            <hr class="my-4" />
+
+            <h5 class="card-title mb-3">Shipping info</h5>
+
+            <div class="row mb-3">
+              <div class="col-lg-4 mb-3">
+                <!-- Default checked radio -->
+                <div class="form-check h-100 border rounded-3">
+                  <div class="p-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Express delivery <br />
+                      <small class="text-muted">1-2 days via PickUp Mtaani </small>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <!-- Default radio -->
+                <div class="form-check h-100 border rounded-3">
+                  <div class="p-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Post office <br />
+                      <small class="text-muted">4-6 days via post </small>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <!-- Default radio -->
+                <div class="form-check h-100 border rounded-3">
+                  <div class="p-3">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Self pick-up <br />
+                      <small class="text-muted">Come to our shop </small>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-8 mb-3">
+                <p class="mb-0">Address</p>
+                <div class="form-outline">
+                  <input type="text" id="typeText" placeholder="Type here" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-sm-4 mb-3">
+                <p class="mb-0">City</p>
+                <select class="form-select">
+                  <option value="1">Nairobi</option>
+                  <option value="2">Machakos</option>
+                  <option value="3">Lamu</option>
+                  <option value="4">Thika</option>
+                  <option value="5">Mombasa</option>
+                  <option value="6">Kisumu</option>
+                </select>
+              </div>
+
+              <div class="col-sm-4 mb-3">
+                <p class="mb-0">House</p>
+                <div class="form-outline">
+                  <input type="text" id="typeText" placeholder="Type here" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-6 mb-3">
+                <p class="mb-0">Postal code</p>
+                <div class="form-outline">
+                  <input type="text" id="typeText" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-6 mb-3">
+                <p class="mb-0">Zip</p>
+                <div class="form-outline">
+                  <input type="text" id="typeText" class="form-control" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" />
+              <label class="form-check-label" for="flexCheckDefault1">Save this address</label>
+            </div>
+
+            <div class="mb-3">
+              <p class="mb-0">Message to seller</p>
+              <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample1" rows="2"></textarea>
+              </div>
+            </div>
+
+            <div class="float-end">
+              <button class="btn btn-light border">Cancel</button>
+              <button class="btn btn-success shadow-0 border" data-bs-toggle="modal" data-bs-target="#exampleModal">Continue</button>
+            </div>
+          </div>
+        </div>
+        <!-- Checkout -->
+
+      </div>
+      <div class="col-xl-2 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+        <div class="ms-lg-4 mt-4 mt-lg-0" style="max-width: 320px;">
+          <h6 class="mb-3">Summary</h6>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p class="mb-2">Total price:</p>
+            <p class="mb-2 fw-bold">{{totalPrice}}</p>
+          </div>
+          <hr />
+          <h6 class="text-dark my-4">Items in cart</h6>
+          <div *ngFor="let cartItem of cartItems" class="d-flex align-items-center mb-4">
+            <div class="me-3 position-relative">
+              <img src="{{cartItem.bookImg}}" style="height: 96px; width: 96x;" class="img-sm rounded border" />
+            </div>
+            <div class="">
+              <a href="#" class="nav-link">
+               {{cartItem.bookName}}
+              </a>
+              <div class="price text-muted">{{cartItem.bookPrice}}</div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Luthera</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3>Total Amount to Pay is {{totalPrice}}</h3>
+        <p>Please do not refresh browser while the transaction
+           is processing. Thank you<br>
+           How Would You Like to pay?
+        </p>
+        <div #paymentRef class="paymentRef"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>

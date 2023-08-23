@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
+import { AuthService } from '../authservice.service';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedService } from '../shared.service';
 import { Subscription } from 'rxjs';
+
+Injectable({
+  providedIn: 'root'
+})
 
 @Component({
   selector: 'app-login',
@@ -16,7 +22,7 @@ loginFormActive: boolean = false;
 loginFormActiveSubscription: Subscription;
 public loginForm!: FormGroup
 
-  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router, private sharedService: SharedService) {
+  constructor(private authService:AuthService,private formbuilder: FormBuilder, private http: HttpClient, private router: Router, private sharedService: SharedService) {
     this.loginFormActiveSubscription = this.sharedService
       .getLoginFormActive()
       .subscribe((isActive) => {
@@ -39,7 +45,7 @@ login(){
     });
     if (user){
     alert("Login Successful");
-
+    this.authService.login();
     this.router.navigate(['landingpage'])
     this.sharedService.toggleLoginForm();
     }else{

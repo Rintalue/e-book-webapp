@@ -5,15 +5,18 @@
     <img src="../../../assets/bookicon.png" alt="Logo" width="44" height="38" class="d-inline-block align-text-top">
     Luthera
   </a>
+<div  *ngIf="menuType ==='default'">
   <form action="" class="search-form">
+
     <input type="search" name="" placeholder="search here..." id="search-box">
     <label for="search-box" class="fa fa-search"></label>
-  </form>
 
+  </form>
+</div>
   <div class="icons">
    <div id="search-btn" class="fa fa-search"></div>
-    <a href="#" class="fa fa-heart"></a>
-    <a href="#" class="fa fa-shopping-cart"></a>
+    <a href="favorites" class="fa fa-heart"></a>
+    <a href="cart" class="fa fa-shopping-cart"></a>
     <div id="login-btn" class="fa fa-user-plus"  routerLink="/login"   (click)="toggleLoginForm()"></div>
   </div>
 </div>

@@ -2,244 +2,33 @@
   <h1 class="heading">Our<span>Books</span></h1>
   <div #booksSlider class="swiper books-slider">
     <div class="swiper-wrapper">
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
+            <div class=" swiper-slide box" *ngFor="let bd of bookData;index as i">
+              <div class="petbox" *ngIf="i<=3">
+              <img src="{{bd.bookImg}}" alt="">
+              <h3>{{bd.bookName}}</h3>
+              <div class="price">{{bd.bookPrice}}</div>
+              <button type="button" class="button" (click)="handleQuantityInc(bd)"><i class="fa fa-plus"></i></button>
+              <span class="amount">{{bd.bookQuantity}}</span>
+              <button type="button" class="button" (click)="handleQuantityDec(bd)"><i class="fa fa-minus"></i></button>
+              <button class="btn"(click)="addToCart(bd)">Add to Cart></button>
+            </div>
+            </div>
+          </div>
 
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-
-    </div>
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-
-
-      <div class=" swiper-slide box">
-        <img src="../../../assets/bookcovers/cover1.png" alt="">
-        <h3>The Beauty and The Beast</h3>
-        <div class="price">Kshs.50</div>
-        <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-        <a href="#" class="btn">Add to Cart></a>
-      </div>
-    </div>
-
-</div>
+        </div>
 
 <div #books2Slider class="swiper books-slider">
   <div class="swiper-wrapper">
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
+    <div class=" swiper-slide box" *ngFor="let bd of bookData;index as i">
+      <div class="petbox" *ngIf="i<=3">
+      <img src="{{bd.bookImg}}" alt="">
+      <h3>{{bd.bookName}}</h3>
+      <div class="price">{{bd.bookPrice}}</div>
       <button type="button" class="button"><i class="fa fa-plus"></i></button>
-        <span class="amount">1</span>
-        <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-
+      <span class="amount">1</span>
+      <button type="button" class="button"><i class="fa fa-minus"></i></button>
+      <button class="btn">Add to Cart></button>
     </div>
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-
-  </div>
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
-    </div>
-
-
-    <div class=" swiper-slide box">
-      <img src="../../../assets/bookcovers/cover1.png" alt="">
-      <h3>The Beauty and The Beast</h3>
-      <div class="price">Kshs.50</div>
-      <button type="button" class="button"><i class="fa fa-plus"></i></button>
-      <span class="amount">1</span>
-      <button type="button" class="button"><i class="fa fa-minus"></i></button>
-      <a href="#" class="btn">Add to Cart></a>
     </div>
   </div>
 

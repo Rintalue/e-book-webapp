@@ -1,21 +1,32 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
 import { SharedService } from '../shared.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor(private sharedService: SharedService) {}
+menuType = 'default';
+  constructor(private sharedService: SharedService, private route:Router) {}
 
   toggleLoginForm() {
     this.sharedService.toggleLoginForm();
   }
   ngOnInit(): void {
-    // This code will be executed when the component is initialized
-    this.handleHeaderScroll(); // Call the function to handle the header scroll immediately
+    this.route.events.subscribe((val:any)=>{
+      if(val.url){
+        if(localStorage.getItem('seller') && val.url.includes('seller')){
+        console.warn('Seller area');
+        this.menuType='seller';
+      }else{
+       this.menuType = 'default';
+      }}
+    })
+
+    this.handleHeaderScroll();
   }
 
   @HostListener('document:click', ['$event'])
@@ -30,7 +41,7 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    this.handleHeaderScroll(); // Call the function to handle the header scroll
+    this.handleHeaderScroll();
   }
 
   private handleHeaderScroll() {

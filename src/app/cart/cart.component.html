@@ -32,7 +32,7 @@
 </td>
 <td>{{getCartDetail.bookQuantity * getCartDetail.bookPrice | number}}Kshs</td>
 <td>
-  <button type="button" class="btn" (click)="delete(getCartDetail.bookId)"><i class="fa fa-trash"></i></button></td>
+  <button type="button" class="btn2" (click)="delete(getCartDetail.bookId)"><i class="fa fa-trash"></i></button></td>
   </tr>
 </table>
 </div>
@@ -41,10 +41,10 @@
     <h3>Total is Kshs{{total}}</h3>
   </div>
   <div>
-    <button type="button" class="btn" (click)="clear()"><i class="fa fa-trash"></i>Clear Basket</button>
+    <button type="button" class="btn2" (click)="clear()"><i class="fa fa-trash"></i>Clear Basket</button>
   </div>
   <div>
-    <button type="button" class="btn" (click)="checkout()"><i class="fa fa-key" ></i>Checkout</button>
+    <button type="button" class="btn2" (click)="checkout()"><i class="fa fa-key" ></i>Checkout</button>
   </div>
 </div>
 </section>

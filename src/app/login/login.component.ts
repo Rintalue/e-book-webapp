@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { AuthService } from '../authservice.service';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap'
 import { Router } from '@angular/router';
 import { SharedService } from '../shared.service';
 import { Subscription } from 'rxjs';

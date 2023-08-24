@@ -23,6 +23,9 @@ import { VendorComponent } from './vendor/vendor.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { SuccessModalComponent } from './success-modal/success-modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReceiptComponent } from './receipt/receipt.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     SellerLoginComponent,
     FavoritesComponent,
     CheckoutComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    SuccessModalComponent,
+    ReceiptComponent
 
 
   ],
@@ -54,7 +59,8 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

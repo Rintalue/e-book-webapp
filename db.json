@@ -6,6 +6,56 @@
       "author": "typicode"
     }
   ],
+  "userInfo": [
+    {
+      "firsName": "",
+      "lastName": "",
+      "phoneNo": "",
+      "email": "",
+      "adrdress": "",
+      "city": "",
+      "house": "",
+      "postalCose": "",
+      "zip": "",
+      "id": 1
+    },
+    {
+      "firsName": "",
+      "lastName": "",
+      "phoneNo": "",
+      "email": "",
+      "adrdress": "",
+      "city": "",
+      "house": "",
+      "postalCose": "",
+      "zip": "",
+      "id": 2
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "phoneNo": "",
+      "email": "",
+      "adrdress": "",
+      "city": "",
+      "house": "",
+      "postalCose": "",
+      "zip": "",
+      "id": 3
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "phoneNo": "",
+      "email": "",
+      "adrdress": "",
+      "city": "",
+      "house": "",
+      "postalCose": "",
+      "zip": "",
+      "id": 4
+    }
+  ],
   "vendorSignup": [
     {
       "username": "prince",
@@ -56,6 +106,30 @@
       "username": "prince",
       "password": "1234",
       "id": 10
+    },
+    {
+      "username": "onizuka",
+      "password": "1234",
+      "id": 11
+    },
+    {
+      "username": "onizuka",
+      "password": "1234",
+      "id": 12
+    }
+  ],
+  "getInTouch": [
+    {
+      "fullname": "Rinta Luther",
+      "email": "lutherrinta@gmail.com",
+      "message": "Hello",
+      "id": 1
+    },
+    {
+      "fullname": "Rinta Luther",
+      "email": "lutherrinta@gmail.com",
+      "message": "Hey",
+      "id": 2
     }
   ],
   "signUpUsers": [

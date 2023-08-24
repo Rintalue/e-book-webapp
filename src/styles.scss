@@ -32,7 +32,7 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
   background: #000;
 }
-.btn{
+.btn2{
   margin-top: 1rem;
   display: inline-block;
   padding: .9rem 3rem;
@@ -43,6 +43,9 @@ html::-webkit-scrollbar-thumb{
   cursor: pointer;
   font-weight: 500;
 }
-.btn:hover{
+.btn2:hover{
   background: #006400;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

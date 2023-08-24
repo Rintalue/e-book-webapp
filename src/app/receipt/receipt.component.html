@@ -1,0 +1,23 @@
+<section class="receipt">
+  <div class="container">
+    <h2>Your Receipt</h2>
+    <div class="receipt-details">
+      <div class="d-flex justify-content-between mb-3">
+        <div><strong>Order Date:</strong> {{ orderDate }}</div>
+        <div><strong>Order Number:</strong> {{ orderNumber }}</div>
+      </div>
+      <h3>Items in Cart</h3>
+      <div *ngFor="let item of cartItems" class="d-flex align-items-center mb-3">
+        <div class="me-3">
+          <img src="{{ item.bookImg }}" class="img-sm rounded border" />
+        </div>
+        <div>
+          <h4>{{ item.bookName }}</h4>
+          <p>Price: {{ item.bookPrice }}</p>
+        </div>
+      </div>
+      <h3>Total Amount: {{ totalPrice }}</h3>
+    </div>
+  </div>
+</section>
+

@@ -8,7 +8,7 @@
     <img src="../../../assets/bookcovers/cart.png" alt="">
     <h4>Your cart is empty</h4>
     <h6>Add item to Cart</h6>
-    <button class="btn" routerLink="/books">Buy Now</button>
+    <button class="btn2" routerLink="/books">Buy Now</button>
   </div>
 </div>
 <section class="cart-section"  *ngIf="getCartDetails.length > 0">
@@ -44,7 +44,7 @@
     <button type="button" class="btn2" (click)="clear()"><i class="fa fa-trash"></i>Clear Basket</button>
   </div>
   <div>
-    <button type="button" class="btn2" (click)="checkout()"><i class="fa fa-key" ></i>Checkout</button>
+    <button type="button" class="btn2" (click)="checkout()"><i class="fa fa-sign-out" ></i>Checkout</button>
   </div>
 </div>
 </section>
